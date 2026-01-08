@@ -1,0 +1,44 @@
+body{
+  background:#111;
+  color:white;
+  text-align:center;
+  font-family:sans-serif;
+}
+
+.piano{
+  display:flex;
+  justify-content:center;
+  position:relative;
+  margin-top:40px;
+}
+
+.key{
+  border:1px solid #000;
+  cursor:pointer;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding-bottom:10px;
+  user-select:none;
+}
+
+.white{
+  width:70px;
+  height:260px;
+  background:white;
+  color:black;
+}
+
+.black{
+  width:45px;
+  height:60px;
+  background:black;
+  position:absolute;
+  margin-left:-22px;
+  z-index:1;
+  color:red;
+}
+
+.key:active{
+  background:#f39c12;
+}
